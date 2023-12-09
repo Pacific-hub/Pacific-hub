@@ -1,0 +1,395 @@
+<Doctype! HTML>
+ <html>
+
+  <head>
+   <title>Fitness and weight loss </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="description" content="An Effective Healthy Guide On Weight Loss">
+      <meta name="Keywords" content="Weight, Fitness, Toning">
+ 
+
+<style>
+     
+.header {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 20px 10px;
+}
+
+.header a {
+  float: left;
+  color: Green;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+  ;
+}
+
+.header{
+
+  text-align: right; 
+  color: Green; 
+  font-weight: bold;
+   font-size: 24px;
+}
+.header{
+  background-color: #3498db;
+  padding: 20px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+  color: blue;
+}
+
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+
+  .tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+ 
+.tooltip-content {
+  visibility: hidden;
+  content:Easy weigh management techniques;
+  width: 120px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  text-align: center;
+  border-radius: 6px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+ .tooltip-content {
+  display: none;
+  content:Easy weigh management techniques;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -10px);
+  width: 120px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  text-align: center;
+  border-radius: 6px;
+}
+
+.tooltip-content :hover {
+  display: block;
+  content:Easy weigh management techniques;
+}
+}
+.content {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.Diet_content
+{
+  width: 500px;
+  margin: 0 auto;
+}
+
+.Medical_Content
+{
+  width: 500px;
+  margin: 0 auto;
+}
+
+.Exercise
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+.Exercise img{
+  width: auto;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.footer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background-color: cyan;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  padding: 10px;
+}
+       </style>
+  </head>
+
+<body>
+   
+ <header>
+<div class="header">
+  <a href="#default" class="logo-link">
+<img src="C:\Users\user\Desktop\DeKUT\Second year\Dekut 2.2\Web Programming\Project\Photo folder\Weighing Scale.png.png"  alt="pounds">
+</a>
+
+<h1 style="text-align: center;color: green; ">A Pound At A Time</h1>
+
+  <div class="header-right">
+    <a class="active" href="#home">Home</a>
+    <span class="tooltip-content"> 
+      <a href="#About" >About</a>
+      </span>
+        
+        </span>
+  </div>
+
+  </div>
+</div>
+<div id="sidebar">
+  <div class="calculator">
+    <h3>BMI Calculator</h3>
+    <input type="number" id="bmiHeight" placeholder="Enter height in cm">
+      <input type="number" id="bmiWeight" placeholder="Enter weight in kg">
+      <button onclick="calculateBMI()">Calculate BMI</button>
+      <p id="bmiResult"></p>
+  </div>
+  <div class="calculator">
+    <h2>Waist-Hip Ratio Calculator</h2>
+    <input type="number" id="whrWaist" placeholder="Enter waist circumference in cm">
+    <input type="number" id="whrHip" placeholder="Enter hip circumference in cm">
+    <button onclick="calculateWHR()">Calculate Waist-Hip Ratio</button>
+    <p id="whrResult"></p>
+  </div>
+</div>
+    
+  <h1 style="text-align: center; color: Red; font-weight: bold; font-size: 40px;">Shake The Pounds!!</h1>
+</header>
+
+<section>
+  <p>
+    "Weight loss doesn't have to be a weight-y issue. Let's make it light and fun!"
+    Attaining and maintaining a healthy weight is a journey that requires understanding, dedication, and personalized strategies. While the scale might be a common tool for tracking progress, it's crucial to recognize that weight management encompasses more than just numbers.
+  </p>
+  <h6 style="color:blueviolet";font-weight: bold; >While we are not necessarily looking at the numbers,it is also important to remember weight is a measure and thus the scale must be crucial in weight management</h6>
+  <p>
+    The first step in weight loss involves weight management.This can be done through:
+  </p>
+  <h5>
+   <li>Tracking The Body Mass and Waist-Hip ratio</li>
+    <li>Dieting</li>
+      <li>Gym workouts</li>
+      
+  </h5>
+  <h2 style="color: gold;";font-weight: bold; >Tracking The Body Mass and Waist-Hip ratio</h2>
+<p>
+  BMI is a measure of body fat based on height and weight.
+  It is calculated by dividing weight in kilograms by height in meters squared (kg/m²).
+  This measure is used to screen for weight categories that may lead to health problems.
+  BMI does not directly measure body fat, but it is an inexpensive and easy way to screen for potential weight-related health problems.
+  BMI can be used to track progress towards weight loss goals.By weighing yourself regularly and calculating your BMI, you can see how your weight is changing over time.
+<h4 style="font-weight: bold; color: pink;"> The BMI Scale</h4>
+The World Health Organization (WHO) has classified BMI into different categories, each with its own associated health risks.These categories are:
+<ul>Underweight: BMI less than 18.5</ul>
+<ul>Normal weight: BMI between 18.5 and 24.9</ul>
+<ul>Overweight: BMI between 25 and 29.9</ul>
+<ul>Obesity: BMI of 30 or higher</ul>
+<h6 style="font-weight: bold";>
+  Underweight
+</h6>
+A BMI below 18.5 is considered underweight.
+This can be a result of factors such as malnutrition, eating disorders, or certain medical conditions.
+
+<h6 style="font-weight: bold";>
+  Normal weight
+</h6>
+A normal BMI is between 18.5 and 24.9.
+People with a normal BMI are at lower risk for many chronic diseases, such as heart disease, stroke, type 2 diabetes, and certain types of cancer.
+It is a range of body weight that is considered healthy for adults.
+<h6 style="font-weight: bold";>
+  Overweight
+</h6>
+A BMI between 25 and 29.9 is considered overweight.
+This is a risk factor for chronic diseases such as type 2 diabetes, heart disease, and stroke.
+<h6 style="font-weight: bold";>
+  Obesity
+</h6>
+A BMI of 30 or higher is considered obese.
+This is a major risk factor for chronic diseases such as type 2 diabetes, heart disease, stroke, and certain types of cancer.
+ <h4 style="font-weight: bold; color: pink;" > Waist-Hip Ratio (WHR)</h4>
+ Waist-hip ratio (WHR) is a measure of body fat distribution that is calculated by dividing the waist circumference by the hip circumference.
+ WHR is a better predictor of health risk than BMI because it takes into account body fat distribution.
+ To measure your waist circumference, you should place a tape measure around your waist, just above your hip bones.
+ To measure your hip circumference, you should place a tape measure around your hips, at the widest point.
+ You can then use the formula below to calculate your WHR.
+ The WHO has classified WHR into different categories, each with its own associated health risks. These categories are:
+<ul> For men: Less than 1.0</ul>
+<ul> For women: Less than 0.85</ul>
+Individuals with a WHR that is higher than these levels are at increased risk of abdominal obesity, heart disease, and stroke. Abdominal obesity is a type of body fat that is stored around the organs in the abdomen.
+This type of fat is more harmful than fat that is stored in other parts of the body.
+
+<div class="content">
+  <img src="C:\Users\user\Desktop\DeKUT\Second year\Dekut 2.2\Web Programming\Project\Photo folder\waist_hipratio.jpeg" alt="WHR Measurement" style="float: left; margin-right: 20px;">
+
+ <p style="font-size: larger;color: chocolate;"> WHR is a better predictor of health risk than BMI because it takes into account body fat distribution.</p>
+</div>
+<p style="font-size:larger; color: darkcyan; "> The calculators at the footer may assist you!! 😄</p>
+
+<h2 style="color: gold;";font-weight: bold; >Dieting</h2>
+Shedding those extra pounds doesn't mean saying goodbye to flavor and excitement in your diet.
+Instead, embrace a "nutritional rainbow" approach, filling your plate with a vibrant array of colorful fruits and vegetables.
+Let your plate be a canvas for culinary creativity, painting it with the hues of nature's bounty.
+Imagine your meals as masterpieces, carefully composed of nutrient-rich ingredients, each with its unique flavor and texture.
+Instead of bland salads, transform them into "salad symphonies," experimenting with different combinations of greens, vegetables, fruits, nuts, and dressings.
+Elevate your ordinary meals into extraordinary experiences.
+<br>
+
+<div class="Diet_content">
+  <img src="C:\Users\user\Desktop\DeKUT\Second year\Dekut 2.2\Web Programming\Project\Photo folder\Teriyaki Salmon Sushi Bowl.png" style="float: left; margin-right: 20px;">
+ <p style="font-size: larger;color:fuchsia ;">This food is so good, even a picky eater would devour it </p>
+</div>
+<br>
+<p>
+In as much as flavour meals should not be said bye to, intake should be looked into.<br>For instance, carbohydrate taking should be minimsed as they play a big role in weight gain.
+This is due to: <br>
+<ul style="font:bold;color: #3498db;"> 1. Calorie Intake and Energy Balance:</ul>
+</p> Weight gain occurs when the body consumes more calories than it burns. Carbohydrates, like other macronutrients, provide calories. Consuming more calories than the body needs for daily activities and energy expenditure leads to excess energy storage, primarily as body fat.
+<br>
+<ul style="font:bold;color: #3498db;">2. Impact on Insulin Response:  </ul>
+Carbohydrates, particularly refined carbohydrates with high glycemic index (GI), cause a rapid rise in blood sugar levels. 
+The body responds by releasing insulin, a hormone that helps regulate blood sugar. While insulin is essential, excessive insulin secretion can lead to increased fat storage.
+<ul style="font:bold;color: #3498db;"> 3. Satiety and Appetite Regulation:</ul>
+Certain types of carbohydrates, such as fiber-rich whole grains and fruits, promote satiety, the feeling of fullness. When you feel satiated, you're less likely to overeat. However, refined carbohydrates, processed foods, and sugary drinks often lack fiber and can lead to overconsumption due to reduced satiety.
+
+<h2 style="color: gold;";font-weight: bold; >Gyming</h2>
+The mention of the word "GYM" makes some of us sigh but ditch the traditional gym setting and take your workouts to the great outdoors.
+Hike through scenic trails, bike along breezy coastal paths, or embrace the fresh air with a yoga session in the park.
+Also one can focus on particular areas to loose weight.Check out here for some insights:
+ 
+<div class ="Exercise">
+<h4 style="text-align: left;color: brown;font-size: larger;">Arms</h4>
+<h6><li>Bicep curls</li></h6>
+This exercise works the  the muscle on the front of your upper arm.
+<img src="C:\Users\user\Desktop\DeKUT\Second year\Dekut 2.2\Web Programming\Project\Photo folder\Biceps curls.jpeg" alt="Biceps curls">
+
+
+<h4 style="text-align: left;color: brown;font-size: larger;">Chest</h4>
+<h6><li>Bench press: </li></h6>
+This exercise works the muscle on the front of your chest.
+<img src="C:\Users\user\Desktop\DeKUT\Second year\Dekut 2.2\Web Programming\Project\Photo folder\bench press.jpeg" alt="Bench Press">
+
+
+<h4 style="text-align: left;color: brown;font-size: larger;">Back</h4>
+<h6><li>Pull Ups: </li></h6>
+This exercise works the muscle on the back of your upper arm.
+<img src="C:\Users\user\Desktop\DeKUT\Second year\Dekut 2.2\Web Programming\Project\Photo folder\pull ups.jpeg" alt="Pull ups">
+
+
+<h4 style="text-align: left;color: brown;font-size: larger;" >Legs</h4>
+<h6><li>Squats: </li></h6>
+This exercise works the quadriceps, the hamstrings, and the glutes.
+<img src="C:\Users\user\Desktop\DeKUT\Second year\Dekut 2.2\Web Programming\Project\Photo folder\squats.jpeg" alt="Squats">
+</div>
+
+
+
+<h2 style="color: gold;";font-weight: bold; >Medical Checkups</h2>
+<div class="Medical_Content">
+  <img src="C:\Users\user\Desktop\DeKUT\Second year\Dekut 2.2\Web Programming\Project\Photo folder\Littmann Stethoscope.jpeg" style="float: left; margin-right: 20px;">
+  <p style="font-size: larger;color:black ;">All in all, weight loss involves knocking on the doctors door a couple of times!!<br>
+    However,the frequency of medical checkouts for weight loss can vary depending on individual needs and health conditions.
+    Generally, it is recommended to schedule checkups every 4-6 weeks during the initial stages of weight loss, and gradually reduce the frequency as you progress and establish a sustainable routine.
+     </p>
+</div>
+<h3> 
+Pound loosing is such an easy task.Dont Let it get on you
+</h3>
+<img src="C:\Users\user\Desktop\DeKUT\Second year\Dekut 2.2\Web Programming\Project\Photo folder\Emoji.jpeg" alt="Happy Face">
+
+</p>
+
+
+
+</section>
+
+<footer style="background-color: cyan; text-align: center;">
+<h1> Weight loss at our palms</h1>
+
+
+</footer>
+
+
+
+
+
+                               <script>
+                                const sidebar = document.getElementById('sidebar');
+                                const OpenSidebar = document.getElementById('OpenSidebar');
+                            
+                                openSidebarButton.addEventListener('click', () => {
+                                  sidebar.style.display = 'block';
+                                });
+                            
+                                function calculateBMI() {
+                                  const height = parseFloat(document.getElementById('bmiHeight').value);
+                                  const weight = parseFloat(document.getElementById('bmiWeight').value);
+                            
+                                  if (!height || !weight) {
+                                    alert('Please enter both height and weight');
+                                    return;
+                                  }
+                            
+                                  const bmi = weight / (height / 100) ** 2;
+                                  const bmiResult = document.getElementById('bmiResult');
+                            
+                                  bmiResult.textContent = `Your BMI is ${bmi.toFixed(2)}`;
+                                }
+                            
+                                function calculateWHR() {
+                                  const waist = parseFloat(document.getElementById('whrWaist').value);
+                                  const hip = parseFloat(document.getElementById('whrHip').value);
+                            
+                                  if (!waist || !hip) {
+                                    alert('Please enter both waist and hip circumference');
+                                    return;
+                                  }
+                            
+                                  const whr = waist / hip;
+                                  const whrResult = document.getElementById('whrResult');
+                            
+                                  whrResult.textContent = `Your Waist-Hip Ratio (WHR) is ${whr.toFixed(2)}`;
+                                }
+                              </script>
+</body>
+</html>
